@@ -1,14 +1,7 @@
 .container {
-  max-width: 900px;
-  width: 100%;
-  background: #202128;
-  margin: 0 auto;
+  width: fit-content;
+  margin: 100px auto;
   padding: 0 16px;
-}
-.container {
-  max-width: 900px;
-  width: 100%;
-  background: #202128;
-  margin: 0 auto;
-  padding: 0 16px;
+  display: flex;
+  gap: 100px;
 }
