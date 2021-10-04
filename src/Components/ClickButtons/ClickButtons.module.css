@@ -1,0 +1,83 @@
+.wrapper {
+  width: 200px;
+  position: relative;
+}
+.clickbuttonsBtn {
+  width: 100%;
+  padding: 8px 16px;
+  background: violet;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.clickbuttonsBlock {
+  border-radius: 15px;
+  margin: 5px;
+  width: 100%;
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 8px 32px;
+  position: absolute;
+}
+
+.bottom::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.left {
+  right: 110%;
+  top: -60%;
+}
+
+.left::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: rotate(45deg) translateX(50%);
+}
+.top {
+  bottom: 100%;
+}
+
+.top::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: rotate(45deg) translateX(50%);
+}
+.right {
+  left: 110%;
+  top: -80%;
+}
+
+.right::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg) translateX(-50%);
+}
