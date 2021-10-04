@@ -7,16 +7,16 @@ export default function Acordion() {
     const [open, setOpen] = useState(false);
     const counter = (idx) => {
         setOpen(!open);
-        return setCount(idx);
+        setCount(idx);
     };
     return (
         <div className={styles["acordion-wraper"]}>
             {acordionList.map((item, idx) => (
                 <div key={idx}>
                     <button onClick={() => counter(idx)} className={styles.title}>
-                        {item.title} {open === true ? <span>&#9650;</span> : <span>&#9660;</span>}
+                        {item.title} {open && count === idx ? <span>&#9650;</span> : <span>&#9660;</span>}
                     </button>
-                    {open && (
+                    {open && count === idx && (
                         <div className={idx === count ? cs(styles.description, styles.active) : cs(styles.description)}>
                             {item.description}
                         </div>

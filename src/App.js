@@ -1,15 +1,14 @@
 import "./App.css";
-import Acordion from "./Components/Acordion/Acordion";
 import DropDown from "./Components/Dropdown/Dropdown";
-import PopOver from "./Components/ClickButtons/ClickButttons";
-import PopOverHov from "./Components/HoverButtons/HoverButtons";
+import PopOver from "./Components/Popover/PopOver";
+import PopOverHov from "./Components/PopOverHov/PopOverHov";
+import Acordion from "./Components/Acordion/Acordion";
 
 function App() {
   return (
     <>
-      <div className="container">
-        <Acordion />
-      </div>
+      <Acordion />
+
       <div className="container">
         <DropDown btnText="Start" />
         <PopOver btnText="Start" btnSide="left" />
